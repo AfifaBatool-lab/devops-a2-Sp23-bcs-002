@@ -14,7 +14,7 @@ jobs:
           test -f index.html
           test -f style.css
           grep -q '<title>' index.html
-          grep -q 'Sp23-bcs-002' index.html
+          grep -q 'WRONG123' index.html
           grep -q 'id="extra"' index.html
       - name: Log in to Docker Hub
         if: github.ref == 'refs/heads/main'
